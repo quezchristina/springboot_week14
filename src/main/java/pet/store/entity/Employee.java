@@ -17,6 +17,7 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long employeeId;
+	
 	private String employeeFirstName;
 	private String employeeLastName;
 	private String employeePhone;
@@ -26,6 +27,6 @@ public class Employee {
 	@ToString.Exclude
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "pet_store_id")
-	private PetStore petStore;
+	PetStore petStore;
 	
 }
