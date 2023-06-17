@@ -49,13 +49,13 @@ public class PetStoreData {
 	@Data
 	@NoArgsConstructor
 	 public class PetStoreCustomer {
-	 private Long customerId;
-	 private String customerFirstName;
-	 private String customerLastName;
-	 private String customerEmail;
+		private Long customerId;
+		private String customerFirstName;
+		private String customerLastName;
+		private String customerEmail;
 	 
 			
-	PetStoreCustomer(Customer customer) {
+	 public PetStoreCustomer(Customer customer) {
 		customerId = customer.getCustomerId();
 		customerFirstName = customer.getCustomerFirstName();
 		customerLastName = customer.getCustomerLastName();
@@ -63,6 +63,7 @@ public class PetStoreData {
 				
 	}
 			}
+	
 	@Data
 	@NoArgsConstructor
 	public class PetStoreEmployee {
